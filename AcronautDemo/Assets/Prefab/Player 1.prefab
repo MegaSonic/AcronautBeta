@@ -106,6 +106,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400012}
+  - 114: {fileID: 11400004}
+  - 82: {fileID: 8200000}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -121,6 +138,7 @@ Transform:
   - {fileID: 400006}
   - {fileID: 400004}
   - {fileID: 400002}
+  - {fileID: 400012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400002
@@ -183,6 +201,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.15252686, y: -.694613457, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 5
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -209,6 +239,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .427387476, y: .766090035}
   m_Center: {x: -.0182013512, y: .00861954689}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -261,6 +349,7 @@ MonoBehaviour:
   vertVelocity: 0
   gravityVelocity: 0
   terminalVelocity: -15
+  soundMgr: {fileID: 11400004}
   facingRight: 1
   swingPauseTimer: 0
   isDashing: 0
@@ -295,6 +384,42 @@ MonoBehaviour:
   wallClingingDir: 0
   raySizeNoVertVel: .100000001
   layerNumForCollisionMask: 8
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef64e006f084714ea77888c1c350fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSounds:
+  - {fileID: 8300000, guid: 3ce249edea08fba498ed7a0f9bcb82da, type: 3}
+  dashSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  wallslideSounds:
+  - {fileID: 0}
+  trampolineSounds:
+  - {fileID: 0}
+  bumperSounds:
+  - {fileID: 0}
+  pickupSounds:
+  - {fileID: 0}
+  hoverSounds:
+  - {fileID: 0}
+  spotlightSounds:
+  - {fileID: 0}
+  monkeySounds:
+  - {fileID: 0}
+  rhinoSounds:
+  - {fileID: 0}
+  elephantSounds:
+  - {fileID: 0}
+  voiceSounds:
+  - {fileID: 0}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
