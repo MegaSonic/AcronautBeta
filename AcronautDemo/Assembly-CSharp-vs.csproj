@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\PlayerPhysics.cs" />
      <Compile Include="Assets\Scripts\PlayerState.cs" />
      <Compile Include="Assets\Scripts\RabbitHat.cs" />
+     <Compile Include="Assets\Scripts\RabbitHatAnimControl.cs" />
      <Compile Include="Assets\Scripts\Rhino.cs" />
      <Compile Include="Assets\Scripts\ScreenSettings.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
