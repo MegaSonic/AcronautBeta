@@ -4,6 +4,7 @@ using System.Collections;
 public class SpotlightPlatform : MonoBehaviour {
 	
 	private PlayerController pc;
+	private Animator animator;
 	
 	public float pauseTime; // amount of pause time on first contact (for animations, sound, etc to play)
 	public float spotlightTime; // amount of time player will keep new abilities
@@ -16,6 +17,7 @@ public class SpotlightPlatform : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -43,7 +45,7 @@ public class SpotlightPlatform : MonoBehaviour {
 	}
 	
 	// Reverse the player's vertical velocity, and multiply it by the bounce multiplier
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnTriggerEnter2D(Collider2D coll){
 		if (!used) {
 			// start the pause timer
 			isPaused = true;
@@ -53,6 +55,8 @@ public class SpotlightPlatform : MonoBehaviour {
 			pc.paused = true;
 
 			used = true;
+
+			animator.SetTrigger("Activate");
 		}
 	}
 }

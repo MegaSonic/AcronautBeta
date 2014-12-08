@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 6e399113719cd1b46947a17e051bf87a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Buff Platform_3
+    21300002: Buff Platform_2
+    21300004: Buff Platform_4
+    21300006: Buff Platform_5
+    21300008: Buff Platform_0
+    21300010: Buff Platform_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,23 +31,83 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Buff Platform_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buff Platform_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buff Platform_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buff Platform_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buff Platform_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buff Platform_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 32
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
