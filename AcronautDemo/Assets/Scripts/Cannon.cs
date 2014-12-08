@@ -4,6 +4,8 @@ using System.Collections;
 public class Cannon : MonoBehaviour {
 	
 	private PlayerController pc;
+	private Animator animator;
+	private Animator animatorBack;
 	
 	public float pauseTime;
 	public float launchAngle;
@@ -19,6 +21,8 @@ public class Cannon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+		animator = GetComponent<Animator>();
+		animatorBack = transform.FindChild ("cannon back").GetComponent<Animator> ();
 	}
 
 	// Update is called once per frame
@@ -45,11 +49,14 @@ public class Cannon : MonoBehaviour {
 		if (!isFiring) {
 			pc.paused = true;
 			pc.transform.position = this.gameObject.transform.position;
+			pc.transform.Translate(0.35f, -0.2f, 0f);
 			inPause = true;
 			timer = pauseTime;
 			pc.horizVelocity = 0f;
 			pc.vertVelocity = 0f;
 			isFiring = true;
+			animator.SetTrigger("Rotate");
+			animatorBack.SetTrigger("Rotate");
 		}
 	}
 
