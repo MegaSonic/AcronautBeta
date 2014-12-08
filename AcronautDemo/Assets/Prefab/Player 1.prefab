@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.87230003, y: -4.69990015, z: 0}
+  m_LocalPosition: {x: -39.894001, y: -7.99209976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -210,7 +210,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.15252686, y: -.694613457, z: 0}
+  m_LocalPosition: {x: 2.15249991, y: -10.526, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -454,8 +454,9 @@ MonoBehaviour:
   vertAirDashSpeed: 8
   wallSlideSpeed: 3.5
   wallJumpAngle: 36
-  wallJumpSpeed: 20
-  wallTrickJumpSpeed: 23
+  wallJumpSpeed: 23
+  wallTrickJumpSpeed: 28
+  wallTrickJumpAirResistance: 25
   hoverSpeed: -1
   knockbackDist: 2
   knockbackSpeed: 15
@@ -473,6 +474,7 @@ MonoBehaviour:
   isDashing: 0
   isHorizAirDashing: 0
   isVertAirDashing: 0
+  inWallJump: 0
   isHovering: 0
   isKnocked: 0
   isSwinging: 0

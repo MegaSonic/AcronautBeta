@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 	public float wallJumpAngle;
 	public float wallJumpSpeed;
 	public float wallTrickJumpSpeed;
+	private float wallJumpLength = 0.75f; // amount of time to move horizontally in wall jump
+	public float wallTrickJumpAirResistance; // slows horizontal velocity in air
 	public float hoverSpeed;
 	public float knockbackDist;
 	public float knockbackSpeed;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 	public bool facingRight = true;
 
 	private float dashTimer;
+	private float wallJumpTimer;
 
 	private float knockbackToTravel;
 	private int knockbackDir;
@@ -59,6 +62,8 @@ public class PlayerController : MonoBehaviour {
 	[HideInInspector]
 	public bool isVertAirDashing = false;
 	[HideInInspector]
+	public bool inWallJump = false;
+	[HideInInspector]
 	public bool isHovering = false;
 	[HideInInspector]
 	public bool isKnocked = false;
@@ -72,6 +77,8 @@ public class PlayerController : MonoBehaviour {
 	public bool killJumpOnButtonUp = true;
 	[HideInInspector]
 	public bool isTeleporting = false;
+
+	private bool wallTrickJumped = false;
 
 	private bool hasUsedDoubleJump = false;
 	private bool hasUsedHorizAirDash = false;
@@ -127,10 +134,13 @@ public class PlayerController : MonoBehaviour {
 		if (tricked) {
 			horizVelocity += wallTrickJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
 			vertVelocity += wallTrickJumpSpeed * Mathf.Cos(wallJumpAngle*Mathf.Deg2Rad);
+			wallTrickJumped = true;
 		} 
 		else {
 			horizVelocity += 0.9f * wallJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
 			vertVelocity += wallJumpSpeed * Mathf.Cos(wallJumpAngle*Mathf.Deg2Rad);
+			wallJumpTimer = wallJumpLength;
+			inWallJump = true;
 		}
 		soundMgr.play(SoundManager.JUMP);
 	}
@@ -265,6 +275,7 @@ public class PlayerController : MonoBehaviour {
 			gravityVelocity = 0f;
 			vertVelocity = 0f;
 			horizVelocity = 0f;
+		//wallTrickJumped = false;
 		//}
 	}
 
@@ -333,6 +344,19 @@ public class PlayerController : MonoBehaviour {
 			}
 			else {
 				horizVelocity += airResistance * Time.deltaTime;
+				if (horizVelocity > 0)
+					horizVelocity = 0f;
+			}
+		}
+		else if (wallTrickJumped)
+		{
+			if (horizVelocity > 0){
+				horizVelocity -= wallTrickJumpAirResistance * Time.deltaTime;
+				if (horizVelocity < 0)
+					horizVelocity = 0f;
+			}
+			else {
+				horizVelocity += wallTrickJumpAirResistance * Time.deltaTime;
 				if (horizVelocity > 0)
 					horizVelocity = 0f;
 			}
@@ -505,6 +529,14 @@ public class PlayerController : MonoBehaviour {
 			if (dashTimer <= 0)
 				KillVertAirDash ();
 		} 
+
+		else if (inWallJump) {
+			wallJumpTimer -= Time.deltaTime;
+			if (wallJumpTimer <= 0) {
+				inWallJump = false;
+				horizVelocity = 0f;
+			}
+		}
 
 		animator.SetFloat("Vertical Speed", (vertVelocity));
 		animator.SetFloat("Speed", Mathf.Abs(horizInput));
