@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\RabbitHat.cs" />
      <Compile Include="Assets\Scripts\Rhino.cs" />
      <Compile Include="Assets\Scripts\ScreenSettings.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\SpotlightPlatform.cs" />
      <Compile Include="Assets\Scripts\Tightrope.cs" />
      <Compile Include="Assets\Scripts\TutorialBox.cs" />

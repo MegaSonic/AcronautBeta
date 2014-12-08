@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: c0c3fd451883ae045b20150ed110d4e5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Trampoline_0
+    21300002: Trampoline_1
+    21300004: Trampoline_2
+    21300006: Trampoline_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,23 +29,53 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Trampoline_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 24
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trampoline_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 24
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trampoline_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 24
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
