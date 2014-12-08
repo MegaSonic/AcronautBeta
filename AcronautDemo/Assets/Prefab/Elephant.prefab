@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 68: {fileID: 6800000}
   m_Layer: 0
   m_Name: Water Side
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100002}
+  - 95: {fileID: 9500000}
   m_Layer: 8
   m_Name: Elephant
   m_TagString: Untagged
@@ -69,8 +71,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.21369982, y: -8.18430042, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.30980015, y: -8.23410034, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400000}
   - {fileID: 400004}
@@ -94,11 +96,11 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .988523424, y: 1.82545471}
-  m_Center: {x: .0750889778, y: .469508171}
+  m_Size: {x: .684050798, y: 1.52098155}
+  m_Center: {x: .658662319, y: -.0886921883}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -108,8 +110,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.68595886, y: 1.77387428}
-  m_Center: {x: .0210061073, y: -1.26806355}
+  m_Size: {x: 2.1562016, y: .928114414}
+  m_Center: {x: .202310562, y: -.616829872}
 --- !u!61 &6100004
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -119,8 +121,39 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.50413418, y: .187782288}
-  m_Center: {x: -.616164684, y: 1.52640915}
+  m_Size: {x: .810613573, y: .204697132}
+  m_Center: {x: -.0664215088, y: .82442975}
+--- !u!68 &6800000
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: .599485874, y: -.862673283}
+  - {x: .336844921, y: -.278870583}
+  - {x: .245626688, y: .719286919}
+  - {x: 1.02379155, y: .751249075}
+  - {x: .940908194, y: -.124183178}
+  - {x: .745269537, y: -.87113142}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ee6f78dfaaf159149a039772fcfaa098, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +185,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 569f34682d97192468b17c9e41c72f0c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b85318e77a5884e2c98252c12540f27c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

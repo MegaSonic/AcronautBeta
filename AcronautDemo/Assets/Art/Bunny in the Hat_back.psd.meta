@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 184e97df2e5e5c9448c6a82a8830098a
+guid: db1daf52c916dd24cacb876413949a5f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Bunny in the Hat_0
-    21300002: Bunny in the Hat_1
-    21300004: Bunny in the Hat_2
-    21300006: Bunny in the Hat_3
-    21300008: Bunny in the Hat_4
+    21300000: Bunny in the Hat_back_0
+    21300002: Bunny in the Hat_back_1
+    21300004: Bunny in the Hat_back_2
+    21300006: Bunny in the Hat_back_3
+    21300008: Bunny in the Hat_back_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,55 +48,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Bunny in the Hat_0
+    - name: Bunny in the Hat_back_0
       rect:
         serializedVersion: 2
-        x: 49
+        x: 50
         y: 46
         width: 309
-        height: 452
+        height: 447
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bunny in the Hat_1
+    - name: Bunny in the Hat_back_1
       rect:
         serializedVersion: 2
-        x: 369
+        x: 370
         y: 46
-        width: 309
-        height: 454
+        width: 307
+        height: 451
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bunny in the Hat_2
+    - name: Bunny in the Hat_back_2
       rect:
         serializedVersion: 2
-        x: 686
-        y: 43
-        width: 309
-        height: 454
+        x: 688
+        y: 44
+        width: 307
+        height: 456
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bunny in the Hat_3
+    - name: Bunny in the Hat_back_3
       rect:
         serializedVersion: 2
-        x: 1018
-        y: 37
-        width: 309
-        height: 454
+        x: 1021
+        y: 38
+        width: 306
+        height: 400
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bunny in the Hat_4
+    - name: Bunny in the Hat_back_4
       rect:
         serializedVersion: 2
-        x: 1346
-        y: 34
-        width: 309
-        height: 454
+        x: 1347
+        y: 257
+        width: 306
+        height: 82
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
