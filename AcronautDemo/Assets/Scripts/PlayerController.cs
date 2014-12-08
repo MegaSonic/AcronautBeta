@@ -37,7 +37,9 @@ public class PlayerController : MonoBehaviour {
 	public float gravityVelocity = 0f; // the current velocity due to gravity
 	[HideInInspector]
 	public float terminalVelocity = -3.3f; // the max speed the player can fall
-	
+
+	public SoundManager soundMgr;
+
 	private PlayerPhysics pPhysics;
 	[HideInInspector]
 	public bool facingRight = true;
@@ -89,6 +91,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void Jump(){
 		vertVelocity += jumpSpeed;
+		soundMgr.playJump ();
 	}
 
 	public void KillJump(){
