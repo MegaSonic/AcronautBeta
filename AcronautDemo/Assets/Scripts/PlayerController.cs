@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void Jump(){
 		vertVelocity += jumpSpeed;
-		soundMgr.playJump ();
+		soundMgr.play (SoundManager.JUMP);
 	}
 
 	public void KillJump(){
@@ -132,6 +132,7 @@ public class PlayerController : MonoBehaviour {
 			horizVelocity += 0.9f * wallJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
 			vertVelocity += wallJumpSpeed * Mathf.Cos(wallJumpAngle*Mathf.Deg2Rad);
 		}
+		soundMgr.play(SoundManager.JUMP);
 	}
 
 
@@ -140,6 +141,7 @@ public class PlayerController : MonoBehaviour {
 			hasUsedDoubleJump = true;
 		vertVelocity = jumpSpeed;
 		gravityVelocity = 0f;	
+		soundMgr.play(SoundManager.DOUBLE_JUMP);
 	}
 
 	// ground dash in direction player is facing
@@ -151,6 +153,7 @@ public class PlayerController : MonoBehaviour {
 			right.Play();
 		} else left.Play();
 		horizVelocity = dashSpeed;	
+		soundMgr.play (SoundManager.DASH);
 		animator.SetBool("isHorizDashing", true);
 	}
 
@@ -178,6 +181,7 @@ public class PlayerController : MonoBehaviour {
 		dashTimer = horizAirDashLength;
 		horizAirDashSpeed *= direction;
 		horizVelocity = horizAirDashSpeed;
+		soundMgr.play (SoundManager.DASH);
 		animator.SetBool("isHorizDashing", true);
 	}
 
@@ -208,6 +212,7 @@ public class PlayerController : MonoBehaviour {
 		dashTimer = vertAirDashLength;
 		vertAirDashSpeed *= direction;
 		vertVelocity = vertAirDashSpeed;
+		soundMgr.play (SoundManager.DASH);
 		animator.SetBool("isVertAirDashing", true);
 	}
 

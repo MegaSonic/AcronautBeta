@@ -116,6 +116,8 @@ GameObject:
   - 4: {fileID: 400012}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
+  - 82: {fileID: 8200004}
+  - 82: {fileID: 8200002}
   m_Layer: 0
   m_Name: Sound Manager
   m_TagString: Untagged
@@ -130,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.223999, y: -8.61629963, z: 0}
+  m_LocalPosition: {x: 1.87230003, y: -4.69990015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -297,6 +299,122 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8200002
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8200004
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -396,14 +514,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSounds:
-  - {fileID: 8300000, guid: 3ce249edea08fba498ed7a0f9bcb82da, type: 3}
+  - {fileID: 8300000, guid: 363dd2c090cc1d341950103472d72f56, type: 3}
+  - {fileID: 8300000, guid: 223814c17c1813c41b3df304c381bac5, type: 3}
+  - {fileID: 8300000, guid: 8cd77c855d6602f4ca5bd548c6f8913a, type: 3}
+  doubleJumpSounds:
+  - {fileID: 8300000, guid: f20ab24cdb8385f45a719f83ae758301, type: 3}
+  - {fileID: 8300000, guid: 223814c17c1813c41b3df304c381bac5, type: 3}
+  - {fileID: 8300000, guid: 8cd77c855d6602f4ca5bd548c6f8913a, type: 3}
   dashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: d3dc5d42fe977f646948b5ea7f335c59, type: 3}
+  - {fileID: 8300000, guid: 4d9720be958b9a8498dc1a76bf73cfdc, type: 3}
   wallslideSounds:
   - {fileID: 0}
   trampolineSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 95278506eead3604cb0cf11e93f057a0, type: 3}
+  - {fileID: 8300000, guid: 22e5c9cef4ac6174cbad70ed14cab05a, type: 3}
   bumperSounds:
   - {fileID: 0}
   pickupSounds:
@@ -413,13 +538,22 @@ MonoBehaviour:
   spotlightSounds:
   - {fileID: 0}
   monkeySounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4be89f53c1c34ba4f9cc200c09b06940, type: 3}
   rhinoSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 22e5c9cef4ac6174cbad70ed14cab05a, type: 3}
   elephantSounds:
   - {fileID: 0}
   voiceSounds:
   - {fileID: 0}
+  hurtSounds:
+  - {fileID: 8300000, guid: bb8611010a042ea43a34d439042c2bb9, type: 3}
+  - {fileID: 8300000, guid: efdceeb6ed8610849826f69d11b84b5e, type: 3}
+  - {fileID: 8300000, guid: 4ed74bc30b695d24ca71adf0c44e8bf1, type: 3}
+  - {fileID: 8300000, guid: 5407cf94d0d48634ab182c2b1f1795c5, type: 3}
+  audioSources:
+  - {fileID: 8200000}
+  - {fileID: 8200004}
+  - {fileID: 8200002}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
