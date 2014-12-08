@@ -4,7 +4,8 @@ using System.Collections;
 public class Rhino : MonoBehaviour {
 
 	private PlayerController pc;
-	
+	private Animator animator;
+
 	public float bounceSpeed;
 	public float dashingBounceSpeed;
 	public float bounceAngle;
@@ -12,6 +13,7 @@ public class Rhino : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+		animator = transform.parent.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +26,9 @@ public class Rhino : MonoBehaviour {
 
 		// move player to the location we want
 		pc.transform.position = this.gameObject.transform.position;
-		
+
+		animator.SetTrigger ("Buck");
+
 		float vertSpeed = pc.isDashing ? dashingBounceSpeed : bounceSpeed;
 		float launchAngRad = bounceAngle * Mathf.Deg2Rad;
 		float hForce = vertSpeed * Mathf.Cos (launchAngRad);
