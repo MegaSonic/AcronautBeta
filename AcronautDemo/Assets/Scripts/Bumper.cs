@@ -5,6 +5,7 @@ public class Bumper : MonoBehaviour {
 	
 	private PlayerController pc;
 	private CircleCollider2D circle;
+	private Animator animator;
 	
 	public float bounceMultiplier;
 	public float minBounce;
@@ -13,6 +14,7 @@ public class Bumper : MonoBehaviour {
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 		circle = gameObject.GetComponent<CircleCollider2D>();
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,8 @@ public class Bumper : MonoBehaviour {
 
 	// Reverse the player's vertical and horizontal velocities
 	void OnCollisionEnter2D(Collision2D coll){
+
+		animator.SetTrigger ("Hit");
 
 		pc.RefreshAirMoves();
 
