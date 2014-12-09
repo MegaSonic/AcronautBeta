@@ -279,11 +279,14 @@ public class PlayerController : MonoBehaviour {
 		//}
 	}
 
+
 	void Start() {
 		pPhysics = GetComponent<PlayerPhysics> ();
 		animator = GetComponent<Animator>();
 		sprite = GetComponent<SpriteRenderer>();
 		pausePanel = GameObject.FindGameObjectWithTag("PausePanel");
+		pausePanel.SetActive(false);
+		//pausePanel = GameObject.FindWithTag("PausePanel");
 	}
 
 	void Update () {
