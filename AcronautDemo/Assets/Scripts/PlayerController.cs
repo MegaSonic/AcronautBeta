@@ -74,6 +74,8 @@ public class PlayerController : MonoBehaviour {
 	[HideInInspector]
 	public bool paused = false;
 	[HideInInspector]
+	public bool cannonWait = false;
+	[HideInInspector]
 	public bool killJumpOnButtonUp = true;
 	[HideInInspector]
 	public bool isTeleporting = false;
@@ -305,6 +307,9 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (paused)
+			return;
+
+		if (cannonWait)
 			return;
 
 		// apply gravity unless grounded, wall clinging, air dashing, swinging

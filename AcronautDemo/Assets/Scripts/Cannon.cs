@@ -33,7 +33,7 @@ public class Cannon : MonoBehaviour {
 			}
 			else {
 				inPause = false;
-				pc.paused = false;
+				pc.cannonWait = false;
 
 				// launch
 				float launchAngRad = launchAngle * Mathf.Deg2Rad;
@@ -47,7 +47,7 @@ public class Cannon : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll){
 		if (!isFiring) {
-			pc.paused = true;
+			pc.cannonWait = true;
 			pc.transform.position = this.gameObject.transform.position;
 			pc.transform.Translate(0.35f, -0.2f, 0f);
 			inPause = true;
