@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.1940002, y: -7.99209976, z: 0}
+  m_LocalPosition: {x: -43.6990013, y: -1.09640002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -538,7 +538,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 31a24fceb30c88247aa0c43660db25cf, type: 3}
   - {fileID: 8300000, guid: a8ade779690a1e84aa40c9862f77a861, type: 3}
   pickupSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a502340c6adc8ec44897f4dc0c8d0839, type: 3}
+  - {fileID: 8300000, guid: f5482fde69d7ab144896d1a1c2f56f3c, type: 3}
   hoverSounds:
   - {fileID: 0}
   spotlightSounds:
