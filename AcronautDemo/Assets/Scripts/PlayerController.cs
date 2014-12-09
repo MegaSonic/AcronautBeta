@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 	public float wallJumpAngle;
 	public float wallJumpSpeed;
 	public float wallTrickJumpSpeed;
-	private float wallJumpLength = 0.75f; // amount of time to move horizontally in wall jump
+	private float wallJumpLength = 0.15f; // amount of time to move horizontally in wall jump
 	public float wallTrickJumpAirResistance; // slows horizontal velocity in air
 	public float hoverSpeed;
 	public float knockbackDist;
@@ -132,6 +132,10 @@ public class PlayerController : MonoBehaviour {
 
 	// if tricked is true, jump further out
 	public void WallJump(bool tricked){
+
+		// disabling trick mode for beta
+		tricked = false;
+
 		gravityVelocity = 0f;
 		if (tricked) {
 			horizVelocity += wallTrickJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
@@ -278,7 +282,7 @@ public class PlayerController : MonoBehaviour {
 			gravityVelocity = 0f;
 			vertVelocity = 0f;
 			horizVelocity = 0f;
-		//wallTrickJumped = false;
+		wallTrickJumped = false;
 		//}
 	}
 
@@ -358,12 +362,12 @@ public class PlayerController : MonoBehaviour {
 		else if (wallTrickJumped)
 		{
 			if (horizVelocity > 0){
-				horizVelocity -= wallTrickJumpAirResistance * Time.deltaTime;
+				horizVelocity -= wallTrickJumpAirResistance;
 				if (horizVelocity < 0)
 					horizVelocity = 0f;
 			}
 			else {
-				horizVelocity += wallTrickJumpAirResistance * Time.deltaTime;
+				horizVelocity += wallTrickJumpAirResistance;
 				if (horizVelocity > 0)
 					horizVelocity = 0f;
 			}
