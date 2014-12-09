@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 189c26e2cfd45d243ac1a9686ca8ea70
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Platforms_0
+    21300002: Platforms_1
+    21300004: Platforms_2
+    21300006: Platforms_3
+    21300008: Platforms_4
+    21300010: Platforms_5
+    21300012: Platforms_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -21,27 +28,97 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Platforms_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Platforms_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 190
+        width: 63
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 2, z: 0, w: 0}
+    - name: Platforms_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 176
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Platforms_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 178
+        width: 1
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Platforms_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 178
+        width: 60
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Platforms_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 178
+        width: 2
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Platforms_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 180
+        width: 60
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
