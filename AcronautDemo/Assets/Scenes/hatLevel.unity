@@ -372,7 +372,7 @@ MonoBehaviour:
   hoverSounds:
   - {fileID: 0}
   spotlightSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1d6b5a6155fd4404482017079f2c70cc, type: 3}
   monkeySounds:
   - {fileID: 8300000, guid: 4be89f53c1c34ba4f9cc200c09b06940, type: 3}
   rhinoSounds:
@@ -390,6 +390,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 627b1805f3d8ceb489dc24fcae796af3, type: 3}
   - {fileID: 8300000, guid: 8c30bd67ad645f24c8492d18d7d1585b, type: 3}
   - {fileID: 8300000, guid: 27c2e87f9d8012f438dde9209087042b, type: 3}
+  cannonSounds:
+  - {fileID: 8300000, guid: 2d167aa6666e5a3418c374fd684ae9ab, type: 3}
   audioSources:
   - {fileID: 84210935}
   - {fileID: 84210934}
@@ -11290,66 +11292,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1268077762}
   m_GameObject: {fileID: 1676137579}
---- !u!1001 &1689740157
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 62.8621292
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.687819481
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: levelName
-      value: Hat Hysteria
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: goldTime
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: silverTime
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-      propertyPath: bronzeTime
-      value: 40
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-  m_RootGameObject: {fileID: 1702828955}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1694467573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11505,7 +11447,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-  m_PrefabInternal: {fileID: 1689740157}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1702828957}
@@ -11522,7 +11464,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee,
     type: 2}
-  m_PrefabInternal: {fileID: 1689740157}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1702828955}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -11530,7 +11472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Hat Hysteria
-  nextLevelName: 
+  nextLevelName: michael_level
   goldTime: 20
   silverTime: 30
   bronzeTime: 40
@@ -11538,7 +11480,7 @@ MonoBehaviour:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 95aa6cebd3094a140a5ab2d6e3828aee, type: 2}
-  m_PrefabInternal: {fileID: 1689740157}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1702828955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 62.8621292, y: -.687819481, z: -10}

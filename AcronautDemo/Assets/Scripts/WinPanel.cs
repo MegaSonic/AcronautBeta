@@ -54,7 +54,10 @@ public class WinPanel : MonoBehaviour {
 	}
 
 	public void DisplayNextMedal(float nextTime) {
-		if (nextTime == 0f) nextMedalTime.text = "None!"; return;
+		if (nextTime == 0f) {
+			nextMedalTime.text = "None!"; 
+			return;
+		}
 
 		int minuteInt = (int) nextTime / 60;
 		string minutes;
