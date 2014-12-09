@@ -19,10 +19,11 @@ public class TutorialBox : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		textBox.text = textToDisplay;
-		textBox.enabled = true;
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
-		textBox.enabled = false;
+		if (textBox.text == textToDisplay) {
+			textBox.text = "";
+		}
 	}
 }
