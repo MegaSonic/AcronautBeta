@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.894001, y: -7.99209976, z: 0}
+  m_LocalPosition: {x: 20.1940002, y: -7.99209976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -480,6 +480,7 @@ MonoBehaviour:
   isSwinging: 0
   inSpotlight: 0
   paused: 0
+  cannonWait: 0
   killJumpOnButtonUp: 1
   isTeleporting: 0
   pausePanel: {fileID: 0}
@@ -532,7 +533,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 95278506eead3604cb0cf11e93f057a0, type: 3}
   - {fileID: 8300000, guid: 22e5c9cef4ac6174cbad70ed14cab05a, type: 3}
   bumperSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 58a242b7943fc8448900d1a7eb3aecbc, type: 3}
+  - {fileID: 8300000, guid: eba8c801aaa0c3e40b2cb40424df198d, type: 3}
+  - {fileID: 8300000, guid: 31a24fceb30c88247aa0c43660db25cf, type: 3}
+  - {fileID: 8300000, guid: a8ade779690a1e84aa40c9862f77a861, type: 3}
   pickupSounds:
   - {fileID: 0}
   hoverSounds:
@@ -552,6 +556,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: efdceeb6ed8610849826f69d11b84b5e, type: 3}
   - {fileID: 8300000, guid: 4ed74bc30b695d24ca71adf0c44e8bf1, type: 3}
   - {fileID: 8300000, guid: 5407cf94d0d48634ab182c2b1f1795c5, type: 3}
+  balloonSounds:
+  - {fileID: 8300000, guid: 627b1805f3d8ceb489dc24fcae796af3, type: 3}
+  - {fileID: 8300000, guid: 8c30bd67ad645f24c8492d18d7d1585b, type: 3}
+  - {fileID: 8300000, guid: 27c2e87f9d8012f438dde9209087042b, type: 3}
   audioSources:
   - {fileID: 8200000}
   - {fileID: 8200004}

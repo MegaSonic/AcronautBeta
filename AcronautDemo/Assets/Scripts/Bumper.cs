@@ -27,6 +27,9 @@ public class Bumper : MonoBehaviour {
 
 		animator.SetTrigger ("Hit");
 
+		SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+		sm.play (SoundManager.BUMPER);
+
 		pc.RefreshAirMoves();
 
 		// get middle contact point
