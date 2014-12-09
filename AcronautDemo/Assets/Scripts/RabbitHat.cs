@@ -18,7 +18,13 @@ public class RabbitHat : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-		exitPoint = matchPoint.gameObject.transform;
+		if (matchPoint == null) {
+			exitPoint = this.transform;
+			matchPoint = this;
+		}
+		else {
+			exitPoint = matchPoint.gameObject.transform;
+		}
 		timer = 1f;
 	}
 	

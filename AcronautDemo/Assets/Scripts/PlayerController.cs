@@ -368,7 +368,7 @@ public class PlayerController : MonoBehaviour {
 		
 		// right direction
 		if (horizInput > 0 && !isHorizAirDashing 
-		    && !isKnocked && !isSwinging) {
+		    && !isKnocked && !isSwinging && !isTeleporting) {
 			if (!isDashing)
 				if (horizVelocity < 0) // if horiz velocity is going in opposite direction, subtract from that
 					horizVelocity += speed;
@@ -379,7 +379,7 @@ public class PlayerController : MonoBehaviour {
 		}
 		// left direction
 		else if (horizInput < 0 && !isHorizAirDashing 
-		         && !isKnocked && !isSwinging) {
+		         && !isKnocked && !isSwinging && !isTeleporting) {
 			if (!isDashing){
 				if (horizVelocity > 0){ // if horiz velocity is going in opposite direction, subtract from that
 					horizVelocity -= speed;
