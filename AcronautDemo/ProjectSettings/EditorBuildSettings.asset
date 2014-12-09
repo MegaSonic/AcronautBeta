@@ -23,3 +23,5 @@ EditorBuildSettings:
     path: Assets/Scenes/isaac_level.unity
   - enabled: 1
     path: Assets/Scenes/balloonLevelEasy.unity
+  - enabled: 1
+    path: Assets/Scenes/intro.unity
