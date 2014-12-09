@@ -21,11 +21,13 @@ public class PickUp : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Player") {
-
-			// Missing an animation for the balloon popping, but this will make the balloon disappear
 			sprite.enabled = false;
 			box.enabled = false;
 			level.playerTime -= timeSave;
+
+			SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+			sm.play (SoundManager.PICKUP);
+
 		}
 		
 	}
