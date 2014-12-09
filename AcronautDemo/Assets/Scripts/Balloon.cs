@@ -61,6 +61,9 @@ public class Balloon : MonoBehaviour {
 			sprite.enabled = false;
 			box.enabled = false;
 
+			SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+			sm.play (SoundManager.BALLOON);
+
 			respawnTimer = timeToRespawn;
 
 			if (Input.GetButton("Jump") || Input.GetButtonUp ("Jump")) {
