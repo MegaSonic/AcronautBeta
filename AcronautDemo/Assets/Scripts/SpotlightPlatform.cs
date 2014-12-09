@@ -56,6 +56,9 @@ public class SpotlightPlatform : MonoBehaviour {
 
 			used = true;
 
+			SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+			sm.play (SoundManager.SPOTLIGHT);
+
 			animator.SetTrigger("Activate");
 		}
 	}

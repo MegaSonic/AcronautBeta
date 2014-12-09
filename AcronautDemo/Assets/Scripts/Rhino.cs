@@ -28,6 +28,11 @@ public class Rhino : MonoBehaviour {
 		pc.transform.position = this.gameObject.transform.position;
 
 		animator.SetTrigger ("Buck");
+		SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+		sm.play (SoundManager.RHINO); // play player's sound
+		
+		SoundManager sm2 = transform.parent.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+		sm2.play (SoundManager.RHINO); // play rhino's sound
 
 		float vertSpeed = pc.isDashing ? dashingBounceSpeed : bounceSpeed;
 		float launchAngRad = bounceAngle * Mathf.Deg2Rad;

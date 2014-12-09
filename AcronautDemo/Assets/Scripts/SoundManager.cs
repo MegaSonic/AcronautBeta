@@ -17,6 +17,7 @@ public class SoundManager : MonoBehaviour {
 	public const int ELEPHANT = 11;
 	public const int HURT = 12;
 	public const int BALLOON = 13;
+	public const int CANNON = 14;
 	public const int OTHER = 100;
 
 	public AudioClip[] jumpSounds = new AudioClip[1];
@@ -34,6 +35,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] voiceSounds = new AudioClip[1];
 	public AudioClip[] hurtSounds = new AudioClip[1];
 	public AudioClip[] balloonSounds = new AudioClip[1];
+	public AudioClip[] cannonSounds = new AudioClip[1];
 
 	public AudioSource[] audioSources = new AudioSource[1];
 
@@ -116,6 +118,10 @@ public class SoundManager : MonoBehaviour {
 		case BALLOON:
 			i = randy.Next (balloonSounds.Length);
 			audioSources[sourceNum].clip = balloonSounds[i];
+			break;
+		case CANNON:
+			i = randy.Next (cannonSounds.Length);
+			audioSources[sourceNum].clip = cannonSounds[i];
 			break;
 		default:
 			i = randy.Next(voiceSounds.Length);

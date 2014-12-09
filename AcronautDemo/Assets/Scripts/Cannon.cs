@@ -6,7 +6,8 @@ public class Cannon : MonoBehaviour {
 	private PlayerController pc;
 	private Animator animator;
 	private Animator animatorBack;
-	
+	private SoundManager sm;
+
 	public float pauseTime;
 	public float launchAngle;
 	public float launchForce;
@@ -41,6 +42,9 @@ public class Cannon : MonoBehaviour {
 				vForce = launchForce * Mathf.Sin (launchAngRad);
 				pc.horizVelocity = hForce;
 				pc.vertVelocity = vForce;
+
+				sm.play (SoundManager.CANNON); // play player's sound
+
 			}
 		}
 	}
@@ -57,6 +61,7 @@ public class Cannon : MonoBehaviour {
 			isFiring = true;
 			animator.SetTrigger("Rotate");
 			animatorBack.SetTrigger("Rotate");
+			sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
 		}
 	}
 

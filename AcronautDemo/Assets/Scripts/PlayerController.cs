@@ -249,6 +249,7 @@ public class PlayerController : MonoBehaviour {
 		isKnocked = true;
 		knockbackDir = direction;
 		knockbackToTravel = knockbackDist;
+		soundMgr.play (SoundManager.HURT);
 	}
 
 	// temporarily disables controls and swings the player up into the air
