@@ -5,6 +5,9 @@ public class Music : MonoBehaviour {
 
 	public static Music instance = null;
 	public AudioClip[] newMusic;
+	public AudioSource musicPlayer;
+
+	private int musicTrack = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +27,10 @@ public class Music : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded() {
-	
+		if (Application.loadedLevelName == "mainMenu") return;
+		musicPlayer.clip = newMusic[musicTrack];
+		musicPlayer.Play();
+		musicTrack++;
+		if (musicTrack >= newMusic.Length) musicTrack = 0;
 	}
 }

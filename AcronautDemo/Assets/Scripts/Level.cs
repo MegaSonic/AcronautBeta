@@ -19,14 +19,36 @@ public class Level : MonoBehaviour {
 
 	public bool reachedGoal = false;
 
+	private bool paused = false;
+
 	// Use this for initialization
 	void Start () {
 		// winPanel = GameObject.FindGameObjectWithTag("WinPanel").GetComponent<WinPanel>();
 		playerTime = 0f;
+		LevelData data = GameObject.FindGameObjectWithTag("LevelData").GetComponent<LevelData>();
+		if (data != null) {
+			levelName = data.levelName;
+			nextLevel = data.nextLevelName;
+			goldTime = data.goldTime;
+			silverTime = data.silverTime;
+			bronzeTime = data.bronzeTime;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetButtonDown ("Pause")) {
+			if (paused) {
+				paused = false;
+			}
+			else {
+				paused = true;
+			}
+		}
+
+		if (paused) return;
+
 		if (reachedGoal) {
 			if (Input.GetButtonDown ("Jump")) {
 				Application.LoadLevel(nextLevel);

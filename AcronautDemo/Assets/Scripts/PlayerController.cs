@@ -296,12 +296,10 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButtonDown("Pause")) {
 			if (paused) {
 				paused = false;
-				Time.timeScale = 1f;
 				pausePanel.SetActive(false);
 			}
 			else {
 				paused = true;
-				Time.timeScale = 0f;
 				pausePanel.SetActive(true);
 			}
 		}
