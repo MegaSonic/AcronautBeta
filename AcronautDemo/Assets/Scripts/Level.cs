@@ -90,6 +90,15 @@ public class Level : MonoBehaviour {
 	public void Win() {
 		winPanel.gameObject.SetActive(true);
 		winPanel.DisplayWinPanel(goldTime, silverTime, bronzeTime, playerTime);
+
+		if (playerTime <= goldTime) 
+			winPanel.DisplayNextMedal(0f);
+		else if (playerTime <= silverTime)
+			winPanel.DisplayNextMedal(goldTime);
+		else if (playerTime <= bronzeTime)
+			winPanel.DisplayNextMedal(silverTime);
+		else winPanel.DisplayNextMedal(bronzeTime);
+
 		reachedGoal = true;
 	}
 
