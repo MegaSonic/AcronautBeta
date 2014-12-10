@@ -61,7 +61,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.5240793, y: -9.84579754, z: 0}
+  m_LocalPosition: {x: -14.9050884, y: 1.43897724, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceMultiplier: 1.29999995
-  minBounce: 7
+  minBounce: 13
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -368,6 +368,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: efdceeb6ed8610849826f69d11b84b5e, type: 3}
   - {fileID: 8300000, guid: 4ed74bc30b695d24ca71adf0c44e8bf1, type: 3}
   - {fileID: 8300000, guid: 5407cf94d0d48634ab182c2b1f1795c5, type: 3}
+  balloonSounds:
+  - {fileID: 0}
+  cannonSounds:
+  - {fileID: 0}
   audioSources:
   - {fileID: 8200004}
   - {fileID: 8200002}

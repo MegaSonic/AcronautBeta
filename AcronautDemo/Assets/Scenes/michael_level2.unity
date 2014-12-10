@@ -3148,7 +3148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceMultiplier: 1.29999995
-  minBounce: 7
+  minBounce: 13
 --- !u!61 &302163115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3785,7 +3785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceMultiplier: 1.29999995
-  minBounce: 7
+  minBounce: 13
 --- !u!61 &375820771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14087,7 +14087,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -63.7000008
+      value: -63.5099983
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
       propertyPath: m_LocalPosition.y
@@ -14120,6 +14120,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
       propertyPath: pauseTime
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.77999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64d72a5ebcf38164f9f90ee8051342ae, type: 2}
@@ -19473,8 +19481,8 @@ Transform:
   m_PrefabInternal: {fileID: 1407241148}
   m_GameObject: {fileID: 1799345543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -63.7000008, y: -3.0999999, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -63.5099983, y: -3.0999999, z: 0}
+  m_LocalScale: {x: 1.77999997, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1617754567}
   - {fileID: 328045938}
