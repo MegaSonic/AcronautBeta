@@ -10,7 +10,8 @@ public class LevelLoader : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetButtonDown("Pause") || Input.GetButtonDown("Jump"))
+			Application.LoadLevel("level1");
 	}
 
 	public void LoadTest() {
