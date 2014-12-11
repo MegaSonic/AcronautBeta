@@ -39,10 +39,14 @@ public class CameraFollow : MonoBehaviour {
 
 			moveTarget = newTarget;		
 		}
-		/*else
+		else
 		{
-			moveTarget = transform.position;
-		}*/
+			// Make sure the camera hasn't somehow gotten stuck
+			float xDiff = Mathf.Abs(playerT.position.x - transform.position.x);
+			float yDiff = Mathf.Abs(playerT.position.y - transform.position.y);
+			if (xDiff > 3 || yDiff > 3)
+				needToMove = true;
+		}
 		transform.position = Vector3.Lerp(transform.position, moveTarget, followSpeed * Time.deltaTime);	
 	}
 
