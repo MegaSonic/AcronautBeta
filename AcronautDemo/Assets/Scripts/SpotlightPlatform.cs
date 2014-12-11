@@ -14,14 +14,21 @@ public class SpotlightPlatform : MonoBehaviour {
 	private bool inSpotlight = false;
 	private float timer;
 
+	private AudioSource music;
+
 	// Use this for initialization
 	void Start () {
 		pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+		music = this.gameObject.GetComponent<AudioSource>();
 		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (used == true && music.isPlaying == false) {
+
+		}
+
 		if (isPaused) {
 			if (timer > 0)
 				timer -= Time.deltaTime;
@@ -35,12 +42,18 @@ public class SpotlightPlatform : MonoBehaviour {
 		}
 
 		else if (inSpotlight) {
-			if (timer > 0)
+			if (music.isPlaying == false) {
+				inSpotlight = false;
+				pc.inSpotlight = false;
+				Music.FadeInMusic();
+			}
+			/*if (timer > 0)
 				timer -= Time.deltaTime;
 			else { // end spotlight mode
 				inSpotlight = false;
 				pc.inSpotlight = false;
-			}
+				Music.FadeInMusic();
+			}*/
 		}
 	}
 	
@@ -56,8 +69,11 @@ public class SpotlightPlatform : MonoBehaviour {
 
 			used = true;
 
-			SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
-			sm.play (SoundManager.SPOTLIGHT);
+			// SoundManager sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+			// sm.play (SoundManager.SPOTLIGHT);
+			Music.FadeOutMusic();
+			music.Play();
+
 
 			animator.SetTrigger("Activate");
 		}

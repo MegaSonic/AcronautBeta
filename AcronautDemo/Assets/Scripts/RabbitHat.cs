@@ -46,7 +46,6 @@ public class RabbitHat : MonoBehaviour {
 			pc.isTeleporting = true;
 			matchPoint.justTeleported = true;
 			pc.transform.position = exitPoint.position;
-
 		}
 	}
 
@@ -56,6 +55,10 @@ public class RabbitHat : MonoBehaviour {
 			justTeleported = false;
 			timer = 1f;
 			jumpedOut = false;
+
+			if (pc.isVertAirDashing) pc.KillVertAirDash();
+			if (pc.isHovering) pc.KillHover();
+			if (pc.isHorizAirDashing) pc.KillHorizAirDash();
 		}
 	}
 }

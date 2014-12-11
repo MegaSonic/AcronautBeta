@@ -12,6 +12,7 @@ public class CameraFollow : MonoBehaviour {
 	private bool needToMove = true;
 	private PlayerController pc;
 
+
 	// Use this for initialization
 	void Start () {
 		playerT = player.transform;
