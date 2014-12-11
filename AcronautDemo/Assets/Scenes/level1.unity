@@ -7991,6 +7991,10 @@ Prefab:
       propertyPath: nextLevel
       value: balloonLevelEasy
       objectReference: {fileID: 0}
+    - target: {fileID: 22300000, guid: 3729b692df3010d478a83884895d689f, type: 2}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3729b692df3010d478a83884895d689f, type: 2}
   m_RootGameObject: {fileID: 880243860}
