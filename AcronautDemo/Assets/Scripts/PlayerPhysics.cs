@@ -150,6 +150,11 @@ public class PlayerPhysics : MonoBehaviour {
 					else {
 						horizTranslation = 0;
 					}
+
+					// if unclimbable don't set wall cling or refresh moves
+					if (hitInfoH.collider.CompareTag("Unclimbable"))
+					    break;
+
 					if (pc.vertVelocity < 0) {
 						wallClinging = true;
 						wallClingingDir = dirH;
