@@ -455,8 +455,8 @@ MonoBehaviour:
   wallSlideSpeed: 3.5
   wallJumpAngle: 22
   wallJumpSpeed: 11
-  wallTrickJumpSpeed: 14
-  wallTrickJumpAirResistance: 25
+  wallTrickJumpSpeed: 15
+  wallTrickJumpAirResistance: 0
   hoverSpeed: -1
   knockbackDist: 2
   knockbackSpeed: 15
