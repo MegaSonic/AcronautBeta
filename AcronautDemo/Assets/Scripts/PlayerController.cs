@@ -140,6 +140,11 @@ public class PlayerController : MonoBehaviour {
 			horizVelocity += wallTrickJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
 			vertVelocity += wallTrickJumpSpeed * Mathf.Cos(wallJumpAngle*Mathf.Deg2Rad);
 			wallTrickJumped = true;
+			if (pPhysics.wallClingingDir > 0)
+				left.Play ();
+			else
+				right.Play();
+
 		} 
 		else { // Regular jump
 			horizVelocity += wallJumpSpeed * Mathf.Sin(wallJumpAngle*Mathf.Deg2Rad) * -pPhysics.wallClingingDir;
