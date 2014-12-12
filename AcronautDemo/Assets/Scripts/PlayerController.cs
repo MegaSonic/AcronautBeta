@@ -141,9 +141,9 @@ public class PlayerController : MonoBehaviour {
 			vertVelocity += wallTrickJumpSpeed * Mathf.Cos(wallJumpAngle*Mathf.Deg2Rad);
 			wallTrickJumped = true;
 			if (pPhysics.wallClingingDir > 0)
-				left.Play ();
+				right.Play ();
 			else
-				right.Play();
+				left.Play();
 
 		} 
 		else { // Regular jump
@@ -464,7 +464,7 @@ public class PlayerController : MonoBehaviour {
 		// start horiz air dash
 		else if ((Input.GetButtonDown ("Trick")) && vertInput == 0 && !pPhysics.grounded 
 		         && !hasUsedHorizAirDash && !isTeleporting && !pPhysics.wallClinging 
-		         &&!inWallJump && !isKnocked && !isSwinging) {
+		         && !inWallJump && !isKnocked && !isSwinging) {
 			if (isHovering)
 				KillHover ();			
 			else if (isVertAirDashing)
