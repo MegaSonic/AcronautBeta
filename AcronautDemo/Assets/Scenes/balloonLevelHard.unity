@@ -6957,7 +6957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Balloon Bonanza
-  nextLevelName: balloonLevelEasy
+  nextLevelName: ending
   goldTime: 10
   silverTime: 20
   bronzeTime: 30

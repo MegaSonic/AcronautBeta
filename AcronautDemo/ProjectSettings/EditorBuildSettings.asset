@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/balloonLevelEasy.unity
   - enabled: 1
     path: Assets/Scenes/kimLevel.unity
+  - enabled: 1
+    path: Assets/Scenes/ending.unity
