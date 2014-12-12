@@ -1872,7 +1872,7 @@ GameObject:
   - 61: {fileID: 501995105}
   m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Unclimbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,7 +1902,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: f2e3abcbab9f9864ea911109d3e4ed9a, type: 2}
+  - {fileID: 2100000, guid: 4df2f8ff54794d247b14b7296fed0a6a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -6448,7 +6448,7 @@ GameObject:
   - 61: {fileID: 1016586111}
   m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Unclimbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6478,7 +6478,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: f2e3abcbab9f9864ea911109d3e4ed9a, type: 2}
+  - {fileID: 2100000, guid: 4df2f8ff54794d247b14b7296fed0a6a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9741,10 +9741,10 @@ MonoBehaviour:
   vertAirDashLength: .25
   vertAirDashSpeed: 8
   wallSlideSpeed: 3.5
-  wallJumpAngle: 36
-  wallJumpSpeed: 23
-  wallTrickJumpSpeed: 28
-  wallTrickJumpAirResistance: 25
+  wallJumpAngle: 22
+  wallJumpSpeed: 11
+  wallTrickJumpSpeed: 15
+  wallTrickJumpAirResistance: 0
   hoverSpeed: -1
   knockbackDist: 2
   knockbackSpeed: 15
