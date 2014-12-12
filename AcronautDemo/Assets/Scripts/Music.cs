@@ -47,6 +47,7 @@ public class Music : MonoBehaviour {
 		if (Application.loadedLevelName == "mainMenu") return;
 		else if (Application.loadedLevelName == "ending") {
 			musicPlayer.Pause();
+			return;
 		}
 		musicPlayer.clip = newMusic[musicTrack];
 		musicPlayer.Play();
