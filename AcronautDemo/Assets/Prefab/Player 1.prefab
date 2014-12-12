@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.1940002, y: -7.99209976, z: 0}
+  m_LocalPosition: {x: -46.8160019, y: -7.99209976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -453,9 +453,9 @@ MonoBehaviour:
   vertAirDashLength: .25
   vertAirDashSpeed: 8
   wallSlideSpeed: 3.5
-  wallJumpAngle: 36
-  wallJumpSpeed: 23
-  wallTrickJumpSpeed: 28
+  wallJumpAngle: 22
+  wallJumpSpeed: 11
+  wallTrickJumpSpeed: 14
   wallTrickJumpAirResistance: 25
   hoverSpeed: -1
   knockbackDist: 2

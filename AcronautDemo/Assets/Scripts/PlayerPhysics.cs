@@ -89,6 +89,8 @@ public class PlayerPhysics : MonoBehaviour {
 					grounded = true;
 					if (!wasGrounded)
 						pc.SetGrounded();
+					if (wallClinging)
+						wallClinging = false;
 					break;
 				}
 
@@ -147,9 +149,8 @@ public class PlayerPhysics : MonoBehaviour {
 							horizTranslation = d - rayBuffer;
 						}
 					}
-					else {
+					else
 						horizTranslation = 0;
-					}
 
 					// if unclimbable don't set wall cling or refresh moves
 					if (hitInfoH.collider.CompareTag("Unclimbable"))
@@ -165,7 +166,7 @@ public class PlayerPhysics : MonoBehaviour {
 						break;
 					}
 					else if (pc.vertVelocity >= 0) {
-						pc.SetGrounded();
+						//pc.SetGrounded();
 						break;
 					}
 				}
