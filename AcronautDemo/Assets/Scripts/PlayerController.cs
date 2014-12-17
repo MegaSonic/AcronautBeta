@@ -380,6 +380,7 @@ public class PlayerController : MonoBehaviour {
 		// get the player's (possible) left/right input
 		// it should be between -1 and 1
 		var horizInput = Input.GetAxis ("Horizontal");
+		var horizInputRaw = Input.GetAxisRaw ("Horizontal"); // snapped to -1,0,1
 		
 		// right direction
 		if (horizInput > 0 && !isHorizAirDashing &&!inWallJump
@@ -388,7 +389,7 @@ public class PlayerController : MonoBehaviour {
 				if (horizVelocity < 0) // if horiz velocity is going in opposite direction, subtract from that
 					horizVelocity += speed;
 				else
-					horizTranslation += horizInput * speed * Time.deltaTime;
+					horizTranslation += horizInputRaw * speed * Time.deltaTime;
 			transform.localScale = new Vector3(1, 1, 1); // face right
 			facingRight = true;
 		}
@@ -400,7 +401,7 @@ public class PlayerController : MonoBehaviour {
 					horizVelocity -= speed;
 				}
 				else
-				horizTranslation += horizInput * speed * Time.deltaTime;
+				horizTranslation += horizInputRaw * speed * Time.deltaTime;
 			}
 			//animator.SetFloat("Speed", Mathf.Abs(horizInput));
 			transform.localScale = new Vector3(-1, 1, 1); // face left
@@ -462,9 +463,10 @@ public class PlayerController : MonoBehaviour {
 
 
 		// start horiz air dash
-		else if ((Input.GetButtonDown ("Trick")) && vertInput == 0 && !pPhysics.grounded 
-		         && !hasUsedHorizAirDash && !isTeleporting && !pPhysics.wallClinging 
-		         && !inWallJump && !isKnocked && !isSwinging) {
+		else if ((Input.GetButtonDown ("Trick")) 
+		         && (hasUsedVertAirDash || Mathf.Abs(horizInput) >= Mathf.Abs(vertInput))		 
+		    	 && !pPhysics.grounded && !hasUsedHorizAirDash && !isTeleporting 
+		         && !pPhysics.wallClinging && !inWallJump && !isKnocked && !isSwinging) {
 			if (isHovering)
 				KillHover ();			
 			else if (isVertAirDashing)
@@ -475,15 +477,8 @@ public class PlayerController : MonoBehaviour {
 				HorizAirDash (-1);
 		} 
 
-		// handle trick button during swing
-		else if ((Input.GetButtonDown ("Trick")) && isSwinging)
-			swingTrick = true;
-
-		if ((Input.GetButtonDown ("Trick")) && isSwinging)
-			swingTrick = false;
-
 		// start vert air dash
-		if ((Input.GetButtonDown ("Trick")) && vertInput != 0 && !pPhysics.grounded 
+		else if ((Input.GetButtonDown ("Trick")) && vertInput != 0 && !pPhysics.grounded 
 		    && !isTeleporting && !hasUsedVertAirDash && !pPhysics.wallClinging 
 		    &&!inWallJump && !isKnocked && !isSwinging) {
 			if (isHovering)
@@ -495,6 +490,14 @@ public class PlayerController : MonoBehaviour {
 			else
 				VertAirDash(1);
 		}
+
+		// handle trick button during swing
+		else if ((Input.GetButtonDown ("Trick")) && isSwinging)
+			swingTrick = true;
+
+		if ((Input.GetButtonDown ("Trick")) && isSwinging)
+			swingTrick = false;
+
 
 		// Update trick behavior based on time passed
 
@@ -573,7 +576,7 @@ public class PlayerController : MonoBehaviour {
 
 
 		animator.SetFloat("Vertical Speed", (vertVelocity));
-		animator.SetFloat("Speed", Mathf.Abs(horizInput));
+		animator.SetFloat("Speed", Mathf.Abs(horizInputRaw));
 		animator.SetBool("Grounded", pPhysics.grounded);
 		animator.SetBool("isClinging", pPhysics.wallClinging);
 		animator.SetBool("isHorizDashing", isDashing);
