@@ -62,6 +62,8 @@ public class Cannon : MonoBehaviour {
 			animator.SetTrigger("Rotate");
 			animatorBack.SetTrigger("Rotate");
 			sm = coll.gameObject.transform.FindChild ("Sound Manager").GetComponent<SoundManager> ();
+			if (pc.isHovering)
+				pc.KillHover();
 		}
 	}
 
