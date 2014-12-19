@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: 9435f08d566a8584cbea73d4e7cbe997
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bgCoaster_0
+    21300002: bgCoaster_1
+    21300004: bgCoaster_2
+    21300006: bgCoaster_3
+    21300008: bgCoaster_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +30,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +47,56 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bgCoaster_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 62
+        width: 152
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgCoaster_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 53
+        width: 170
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgCoaster_2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 53
+        width: 171
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgCoaster_3
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 53
+        width: 173
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgCoaster_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 53
+        width: 173
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

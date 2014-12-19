@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: cbf535136a004684695d7cf1c5246b9a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bgRocket_0
+    21300002: bgRocket_1
+    21300004: bgRocket_2
+    21300006: bgRocket_3
+    21300008: bgRocket_4
+    21300010: bgRocket_5
+    21300012: bgRocket_6
+    21300014: bgRocket_7
+    21300016: bgRocket_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +34,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +51,96 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bgRocket_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 72
+        width: 49
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 90
+        width: 10
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 76
+        width: 45
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 64
+        width: 61
+        height: 176
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 64
+        width: 64
+        height: 176
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 52
+        width: 105
+        height: 215
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_6
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 66
+        width: 54
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgRocket_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 60
+        width: 67
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
