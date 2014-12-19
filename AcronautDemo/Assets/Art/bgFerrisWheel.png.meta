@@ -13,6 +13,7 @@ TextureImporter:
     21300016: bgFerrisWheel_10
     21300018: bgFerrisWheel_11
     21300020: bgFerrisWheel_10
+    21300022: bgFerrisWheel_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +36,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -48,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -57,110 +58,100 @@ TextureImporter:
     - name: bgFerrisWheel_1
       rect:
         serializedVersion: 2
-        x: 424
-        y: 111
-        width: 206
-        height: 257
+        x: 51
+        y: 107
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_2
       rect:
         serializedVersion: 2
-        x: 646
-        y: 121
-        width: 198
-        height: 237
+        x: 291
+        y: 104
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_3
       rect:
         serializedVersion: 2
-        x: 862
-        y: 116
-        width: 206
-        height: 251
+        x: 555
+        y: 100
+        width: 273
+        height: 270
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgFerrisWheel_4
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 104
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_5
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 112
-        width: 200
-        height: 230
+        x: 1192
+        y: 101
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_6
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 108
-        width: 209
-        height: 244
+        x: 1508
+        y: 101
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_7
       rect:
         serializedVersion: 2
-        x: 1515
-        y: 100
-        width: 270
-        height: 268
+        x: 1833
+        y: 95
+        width: 273
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_8
       rect:
         serializedVersion: 2
-        x: 15
-        y: 231
-        width: 35
-        height: 26
+        x: 2136
+        y: 92
+        width: 273
+        height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_9
       rect:
         serializedVersion: 2
-        x: 68
-        y: 142
-        width: 151
-        height: 204
+        x: 2449
+        y: 95
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgFerrisWheel_10
       rect:
         serializedVersion: 2
-        x: 224
-        y: 121
-        width: 188
-        height: 231
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bgFerrisWheel_11
-      rect:
-        serializedVersion: 2
-        x: 1987
-        y: 96
-        width: 11
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bgFerrisWheel_10
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 58
-        width: 301
-        height: 330
+        x: 2801
+        y: 89
+        width: 273
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 1213eddb0e8cd1b44b77c6851e3e1fb8
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bgTent_0
+    21300002: bgTent_2
+    21300004: bgTent_3
+    21300006: bgTent_4
+    21300008: bgTent_5
+    21300010: bgTent_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -24,24 +30,84 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bgTent_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 52
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgTent_2
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 51
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgTent_3
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 53
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgTent_4
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 53
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgTent_5
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 53
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bgTent_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 52
+        width: 232
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -28,7 +28,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -41,7 +41,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -50,22 +50,22 @@ TextureImporter:
     - name: bgBalloon_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 29
-        width: 17
-        height: 14
+        x: 24
+        y: 23
+        width: 95
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgBalloon_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 26
-        width: 23
-        height: 20
+        x: 115
+        y: 23
+        width: 95
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgBalloon_2
       rect:
@@ -75,7 +75,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgBalloon_3
       rect:
@@ -85,7 +85,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

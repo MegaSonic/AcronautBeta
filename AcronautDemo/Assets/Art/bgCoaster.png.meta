@@ -29,7 +29,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -42,7 +42,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -51,32 +51,32 @@ TextureImporter:
     - name: bgCoaster_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 62
-        width: 152
-        height: 120
+        x: 14
+        y: 53
+        width: 173
+        height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgCoaster_1
       rect:
         serializedVersion: 2
-        x: 205
+        x: 202
         y: 53
-        width: 170
+        width: 173
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgCoaster_2
       rect:
         serializedVersion: 2
-        x: 415
+        x: 413
         y: 53
-        width: 171
+        width: 173
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgCoaster_3
       rect:
@@ -86,7 +86,7 @@ TextureImporter:
         width: 173
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bgCoaster_4
       rect:
@@ -96,7 +96,7 @@ TextureImporter:
         width: 173
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

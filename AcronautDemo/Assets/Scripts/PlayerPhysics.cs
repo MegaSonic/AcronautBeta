@@ -15,6 +15,9 @@ public class PlayerPhysics : MonoBehaviour {
 	public float raySizeNoVertVel; // downward raycast size when not moving vertically
 	public int layerNumForCollisionMask;
 
+	public float lastXSpeed; // for informational purposes
+	public float lastYSpeed;
+
 	private int collisionMask;
 	private BoxCollider2D coll;
 
@@ -42,7 +45,6 @@ public class PlayerPhysics : MonoBehaviour {
 
 	// Apply movement to the player while checking for collisions
 	public void Move(float horizTranslation, float vertTranslation) {
-
 		wasGrounded = grounded;
 		grounded = false;
 		wasClinging = wallClinging;
@@ -180,5 +182,7 @@ public class PlayerPhysics : MonoBehaviour {
 		}
 		
 		transform.Translate (horizTranslation, vertTranslation, 0);
+		lastXSpeed = horizTranslation;
+		lastYSpeed = vertTranslation;
 	}	
 }

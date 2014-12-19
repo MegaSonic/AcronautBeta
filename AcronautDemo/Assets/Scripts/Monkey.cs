@@ -29,6 +29,8 @@ public class Monkey : MonoBehaviour {
 		sm2.play (SoundManager.MONKEY); // play monkey's sound
 
 		pc.isSwinging = true;
+		if (pc.isHovering)
+			pc.KillHover ();
 		pc.swingPauseTimer = pauseTime;
 		pc.horizVelocity = 0f;
 		pc.vertVelocity = 0f;
